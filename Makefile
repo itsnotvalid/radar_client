@@ -17,6 +17,25 @@ build:
 	--main lib/index.js \
 	--out dist/radar_client.js
 
+	# @./node_modules/gluejs/bin/gluejs \
+	# --include ./lib \
+	# --include ./node_modules/minilog/dist/minilog.js \
+	# --include ./node_modules/engine.io-client/dist/engine.io.js \
+	# --replace 'engine.io-client="node_modules/engine.io-client/dist/engine.io.js",minilog="node_modules/minilog/dist/minilog.js"' \
+	# --npm microee \
+	# --global RadarClient \
+	# --main lib/index.js \
+	# --out dist/radar_client.js
+
+	# @echo 'Building public/radar_client.js'
+	# @./node_modules/gluejs/bin/gluejs \
+	# --include ./node_modules/minilog/dist/minilog.js \
+	# --include ./node_modules/engine.io-client/dist/engine.io.js \
+	# --include dist/radar_client.js \
+	# --out dist/radar_client.js
+	# uncomment if you want to use uglifyJS to further minify the file @uglifyjs --overwrite public/radar_client.js
+	# @echo 'recombined eio and minilog to radar_client.js'
+
 test:
 	@sudo -E ./node_modules/.bin/mocha \
 		--ui exports \
