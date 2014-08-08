@@ -1,3 +1,6 @@
+### next
+* emit message events in a new context to avoid errors
+
 ### 0.9.1
 * server version bump
 
