@@ -34,7 +34,7 @@
   "dependencies": {
     "microee": "*",
     "minilog": "*",
-    "engine.io-client": "1.4.2",
+    "engine.io-client": "3.1.4",
     "sfsm": "0.0.4",
     "radar_message": "^1.0.1"
   },
